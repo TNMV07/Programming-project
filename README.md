@@ -70,7 +70,7 @@ This hybrid approach combines the simplicity of MicroPython with the stability o
 
 ***⚠️ MicroPython is not used for the camera due to driver limitations.***
   ### ⚙️ Installation & Setup
-####  Flash MicroPython Firmware
+#### 1️⃣ Flash MicroPython Firmware
   + Download MicroPython for ESP32
   + Flash using esptool.py
 ```bash
