@@ -13,8 +13,8 @@ The system enables real-time movement control and adjustable camera viewing via 
   - Installation & Setup
   - How to Use
   - Project Structure
-  -  Future Improvements
-  -  Contributors
+  - Future Improvements
+  - Contributors
 
   ### Introduction
   
@@ -50,7 +50,7 @@ This hybrid approach combines the simplicity of MicroPython with the stability o
 | Components                |  Description  |
 |:---------|:----:|
 | ESP32                     |  Main controller running MicroPython  |
-| ESP32-CAM                 |
+| ESP32-CAM                 |  Camera module OV2640
 | Servo Motor x2            |  Camera pan & tilt  |
 | Motor Driver (L298N)      |  Controls DC motors  |
 | DC Motors + Wheels        |  Vehicle movement  |
@@ -65,6 +65,8 @@ This hybrid approach combines the simplicity of MicroPython with the stability o
 **Camera System:**
   + Arduino IDE
   + ESP32-CAM Arduino libraries
+  + OV2640 camera driver
+  + HTTP video streaming server
 
 ***⚠️ MicroPython is not used for the camera due to driver limitations.***
   ### ⚙️ Installation & Setup
@@ -90,7 +92,7 @@ Configure:
   + Set WiFi SSID & password
   ### ▶️ How to Use
 1. Power on the system
-2. ESP32 connects to WiFi
+2. ESP32_CAM connects to WiFi
 3. Check Serial output for IP address
 4. Open browser and access:
   - Camera IP → live video stream
