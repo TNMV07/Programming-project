@@ -98,14 +98,22 @@ Configure:
   - Camera IP → live video stream
 5. Adjust camera angle using pan–tilt servos
   ### 📁 Project Structure
-```markon
-ESP32-Camera-Car/
-├── Micropython/
-│   ├── Monitor Car.py
-│   ├── Controller Module.py
-├── arduino-camera/
-│   └── esp32_cam_stream.ino
-└── README.md
+```mermaid
+flowchart LR
+    Controller[Controller ESP32]
+    Car[Car ESP32]
+    Controller -. ESP-NOW .-> Car
+
+    %% Controller inputs
+    Controller --> J1[Joystick\nCar Movement]
+    Controller --> J2[Joystick\nCamera Control]
+
+    %% Car outputs
+    Car --> MD[Motor Driver]
+    MD --> M[DC Motors]
+
+    Car --> SD[Servo Driver]
+    SD --> C[Pan-Tilt Camera]
 ```
   ### 🚀 Future Improvements
 🔹 Mobile app control<br>
