@@ -90,6 +90,11 @@ Configure:
   + Select ESP32-CAM board
   + Upload Arduino camera web server example
   + Set WiFi SSID & password
+#### 4️⃣ Schematic Design
+<h2 align="center">Car schematic</h2>
+<img width="2000" height="2000" alt="image" src="https://github.com/user-attachments/assets/ed7e5c09-e39e-4cd9-b7c5-801ff45f7dc3" />
+<h2 align="center">Controller schematic</h2>
+<img width="3000" height="3000" alt="image" src="https://github.com/user-attachments/assets/55fecf74-0b22-4b0b-ac34-4b21a51747d0" />
   ### ▶️ How to Use
 1. Power on the system
 2. ESP32_CAM connects to WiFi
